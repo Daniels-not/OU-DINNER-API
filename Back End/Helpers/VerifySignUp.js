@@ -21,13 +21,13 @@ checkDuplicateUsernameOrEmail = (req, res, next) => {
             email: req.body.email
         }).exec((err, user) => {
             if (err) {
-            res.status(500).send({ message: err });
-            return;
+                res.status(500).send({ message: err });
+                return;
             }
     
             if (user) {
-            res.status(400).send({ message: "Failed! Email is already in use!" });
-            return;
+                res.status(400).send({ message: "Failed! Email is already in use!" });
+                return;
             }
     
             next();

@@ -25,27 +25,27 @@ function initial() {
                 console.log("error", err);
             }
     
-            console.log("added 'user' to roles collection");
+                console.log("added 'user' to roles collection");
             });
     
             new Role({
-            name: "moderator"
+                name: "moderator"
             }).save(err => {
             if (err) {
                 console.log("error", err);
             }
     
-            console.log("added 'moderator' to roles collection");
+                console.log("added 'moderator' to roles collection");
             });
     
             new Role({
-            name: "admin"
+                name: "admin"
             }).save(err => {
             if (err) {
                 console.log("error", err);
             }
     
-            console.log("added 'admin' to roles collection");
+                console.log("added 'admin' to roles collection");
             });
         }
         });

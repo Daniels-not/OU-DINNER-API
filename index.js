@@ -17,9 +17,7 @@ require("dotenv").config()
 
 app.use(express.json());
 app.use(cors(corsOptions));
-var corsOptions = {
-    origin: `http://localhost:${PORT}`,
-};
+
 
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());

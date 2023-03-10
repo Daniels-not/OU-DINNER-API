@@ -1,6 +1,6 @@
 // routes/user.routes.js
 
-const { authJwt } = require("../Helpers/index");
+const { authJwt } = require("../Helpers/index.js");
 const controller = require("../Components/User");
 
 module.exports = function(app) {
